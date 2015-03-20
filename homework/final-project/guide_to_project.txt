@@ -1,0 +1,13 @@
+I tried a bunch of things I could do with the text I got from the CDPH with penalty information on hospitals. The programs can improve a lot, but here's the gist of what I got:
+
+analyzer.sh - gives you name of hospital with most penalties. As you'll see later on, Kaiser Foundation Hospital is in many cities. So I tried to get the hospital name plus city or county name in analyzer2.sh
+
+analyzer2.sh - counts top hospitals with penalties plus gives you some location info, such as city or county or city and zip code. But, I can only find half of the Kaiser hospitals in the above analyzer so something I'm not accounting for is going on with my search for text. At least I can see where 6 of the Kaiser hospitals are, and it gives me a clear idea of hospitals that match both searches, like St. Jude Medical Center in Fullerton (6 penalties).
+
+analyzer_Kaiser.sh - does the search of just Kaiser hospitals since there are so many in California, that's probably why they've got so many penalties too. This tells me my search in the two programs above would need to improve to account for names like Santa Teresa.... Kaiser Foundation.  I can see now that there are more Kaiser hospitals with penalties than the two programs above found. But at least I can see the number of penalties for the local San Francisco and Oakland Kaiser hospitals (2 each).
+
+Then, just reading some of the descriptions I got curious about hospitals that got a penalty because a doctor left an object inside of a patient, which is a real bummer. So I wrote this other script:
+
+analyzer_retained_object.sh  - shows you hospitals with a penalty that includes retained objects. UCSF Medical Center has 2 such penalties. 
+
+I wrote all this in my folder for the final project too.
